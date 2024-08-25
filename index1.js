@@ -54,7 +54,7 @@ form.appendChild(emailLabel);
 const emailInput = document.createElement('input');
 emailInput.setAttribute('type', 'email');
 emailInput.setAttribute('required', true); 
-emailInput.setAttribute('placeholder', 'example@example.com');
+emailInput.setAttribute('placeholder', 'Enter your Email');
 form.appendChild(emailInput);
 
 const submitButton = document.createElement('button');
