@@ -6,6 +6,9 @@ document.body.style.textAlign = "center";
 const mainHeading = document.createElement('h1');
 mainHeading.textContent = 'DOM Manipulation';
 document.body.appendChild(mainHeading);
+const Justin =document.querySelector('h1')
+Justin.textContent = 'By Justin Porras'
+
 
 // Making a paragraph
 const paragraph = document.createElement('p');
@@ -82,3 +85,18 @@ form.addEventListener('submit', function(event) {
 });
 
 document.body.appendChild(form);
+
+
+// Navigating parent-child and sibling relationships
+const firstListItem = favoriteThings.firstChild;
+const lastListItem = favoriteThings.lastChild; 
+
+console.log('First list item:', firstListItem.textContent);
+console.log('Last list item:', lastListItem.textContent);
+
+const formParent = form.parentNode; 
+console.log('Form parent node:', formParent.nodeName);
+
+const nextElement = mainHeading.nextElementSibling; 
+console.log('Next element after main heading:', nextElement.nodeName);
+
