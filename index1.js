@@ -88,13 +88,13 @@ document.body.appendChild(form);
 
 
 // Navigating parent-child and sibling relationships
-const firstListItem = favoriteThings.firstChild;
-const lastListItem = favoriteThings.lastChild; 
+const first = favoriteThings.firstChild;
+const last = favoriteThings.lastChild; 
 
-console.log('First list item:', firstListItem.textContent);
-console.log('Last list item:', lastListItem.textContent);
+console.log('First list item:', first.textContent);
+console.log('Last list item:', last.textContent);
 
-const formParent = form.parentNode; 
+const Parent = form.parentNode; 
 console.log('Form parent node:', formParent.nodeName);
 
 const nextElement = mainHeading.nextElementSibling; 
